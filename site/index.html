@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stanford Daily · Data — four reports from four datasets</title>
+<meta name="description" content="Index of the Stanford Daily data series: college costs, chemical testing of Bay Area food, the campus police blotter, and a corpus of immigration press releases.">
+<link rel="canonical" href="https://aayanahmed200.github.io/stanford-daily-data/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stanford Daily · Data">
+<meta property="og:description" content="Four reports from four datasets.">
+<meta property="og:url" content="https://aayanahmed200.github.io/stanford-daily-data/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="series.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="masthead__series" href="./" aria-current="page">Stanford Daily · Data</a>
+    <div class="masthead__right">
+      <nav class="masthead__nav" aria-label="Series">
+        <a href="https://aayanahmed200.github.io/stanford-daily-price-of-prestige/">The Price of Prestige</a>
+        <a href="https://aayanahmed200.github.io/stanford-daily-plasticlist-eda/">PlasticList</a>
+        <a href="https://aayanahmed200.github.io/stanford-daily-blotter-fiction/">Blotter fiction</a>
+        <a href="https://aayanahmed200.github.io/stanford-daily-biglocal-ice-pipeline/">ICE pipeline</a>
+      </nav>
+      <a class="masthead__gh" href="https://github.com/aayanahmed200" rel="me">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        <span>aayanahmed200</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap report">
+  <p class="kicker">Stanford Daily Tech Bootcamp</p>
+  <h1>Four reports, four datasets</h1>
+  <p class="standfirst">Each project takes one public dataset and reports what it actually says: the price of a Stanford degree, chemical testing of Bay Area food, the campus police blotter, and a corpus of immigration press releases.</p>
+  <p class="byline">Aayan Ahmed · Data journalism · 2026</p>
+
+  <div class="stories">
+
+    <article class="story">
+      <p class="story__meta">01 · Analysis · College Scorecard</p>
+      <h2><a href="https://aayanahmed200.github.io/stanford-daily-price-of-prestige/">The Price of Prestige</a></h2>
+      <p>A Stanford degree costs $87,833 at sticker and $13,807 on average after aid. The piece follows that gap through the income brackets, a 25-year tuition trend, and median earnings ten years out, then fits a regression over 530 four-year colleges to see how much of the earnings premium is the school and how much is the family income of the students it admits.</p>
+      <p class="story__why">Why it exists: the sticker price is the number everyone quotes and almost nobody pays. Putting the two published figures side by side, and checking the earnings claim against the students a school selects, is the difference between a brochure and a finding.</p>
+      <p class="story__links"><a href="https://aayanahmed200.github.io/stanford-daily-price-of-prestige/">Read the report</a><a href="https://github.com/aayanahmed200/stanford-daily-price-of-prestige">Code and data</a><a href="https://aayanahmed200.github.io/stanford-daily-price-of-prestige/docs/sources.html">Sources</a></p>
+    </article>
+
+    <article class="story">
+      <p class="story__meta">02 · Analysis · PlasticList testing data</p>
+      <h2><a href="https://aayanahmed200.github.io/stanford-daily-plasticlist-eda/">Plastic in the Pantry</a></h2>
+      <p>An exploratory pass over 618 lab samples covering 236 Bay Area food and beverage products, including the items a Stanford dining hall serves. The analysis ranks products by measured concentration, separates categories, and adds a dining-hall tray as its own case rather than treating the dataset as a general claim about plastics in food.</p>
+      <p class="story__why">Why it exists: PlasticList published raw measurements, not conclusions, and a table of concentrations is hard to read as an everyday question. Sorting it by what a student actually eats turns a lab dataset into something you can check against your own lunch.</p>
+      <p class="story__links"><a href="https://aayanahmed200.github.io/stanford-daily-plasticlist-eda/">Read the analysis</a><a href="https://github.com/aayanahmed200/stanford-daily-plasticlist-eda">Code and data</a></p>
+    </article>
+
+    <article class="story">
+      <p class="story__meta">03 · Fiction · Stanford Daily blotter</p>
+      <h2><a href="https://aayanahmed200.github.io/stanford-daily-blotter-fiction/">Lot 95</a></h2>
+      <p>A short story built from 139 Stanford Daily police-blotter articles published between 2021 and 2026. The plot — a reporter noticing that one parking lot keeps appearing in the same category of theft — comes from the structure of the log itself: recurring locations, repeated incident types, and the flat procedural language the blotter uses for everything.</p>
+      <p class="story__why">Why it exists: the blotter is the most-read, least-examined page in a campus paper, written to a fixed format that hides how much it repeats. Reading it as a dataset rather than a list of incidents is a way to write fiction that stays inside what the record actually contains.</p>
+      <p class="story__links"><a href="https://aayanahmed200.github.io/stanford-daily-blotter-fiction/">Read the story</a><a href="https://github.com/aayanahmed200/stanford-daily-blotter-fiction">Code and data</a></p>
+    </article>
+
+    <article class="story">
+      <p class="story__meta">04 · Pipeline · Big Local News ICE releases</p>
+      <h2><a href="https://aayanahmed200.github.io/stanford-daily-biglocal-ice-pipeline/">Reading 965 ICE press releases as data</a></h2>
+      <p>A Python pipeline that reads 965 press releases from the Big Local News ICE dataset as raw HTML and extracts dateline locations, named people, agencies, money amounts, quantities and action categories into structured records. It ships a validation report that states how much of the output is usable, and it can be re-run on future releases.</p>
+      <p class="story__why">Why it exists: the releases are public but only readable one at a time, which makes counting anything across them a manual job. A pipeline with a published error rate turns a wall of announcements into a table a reporter can query, and the validation report is there so the table can be trusted or rejected on its numbers.</p>
+      <p class="story__links"><a href="https://aayanahmed200.github.io/stanford-daily-biglocal-ice-pipeline/">Read the report</a><a href="https://github.com/aayanahmed200/stanford-daily-biglocal-ice-pipeline">Code and data</a></p>
+    </article>
+
+  </div>
+
+  <div class="aside">
+    <p>All four projects were produced for the Stanford Daily Tech Bootcamp. The reporting on this page is limited to what each dataset supports; the limitations are stated on each project's page and in its repository.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <span>Stanford Daily Tech Bootcamp · data journalism</span>
+    <span class="site-footer__series">Series: <a href="https://aayanahmed200.github.io/stanford-daily-price-of-prestige/">The Price of Prestige</a> · <a href="https://aayanahmed200.github.io/stanford-daily-plasticlist-eda/">PlasticList</a> · <a href="https://aayanahmed200.github.io/stanford-daily-blotter-fiction/">Blotter fiction</a> · <a href="https://aayanahmed200.github.io/stanford-daily-biglocal-ice-pipeline/">ICE pipeline</a></span>
+    <span><a href="https://github.com/aayanahmed200/stanford-daily-data">Repository</a> · <a href="https://github.com/TheStanfordDaily/tech-practicum">Practicum</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
