@@ -1,41 +1,51 @@
-# Stanford Daily: Data series
+# Stanford Daily — Data Journalism Series
 
-**Live:** [aayanahmed200.github.io/stanford-daily-data](https://aayanahmed200.github.io/stanford-daily-data/)
+> A static index for four Stanford Daily data-journalism projects, linking each report and summarising the dataset and question behind it.
 
-**Series:** [The Price of Prestige](https://aayanahmed200.github.io/stanford-daily-price-of-prestige/) · [PlasticList](https://aayanahmed200.github.io/stanford-daily-plasticlist-eda/) · [Blotter fiction](https://aayanahmed200.github.io/stanford-daily-blotter-fiction/) · [ICE pipeline](https://aayanahmed200.github.io/stanford-daily-biglocal-ice-pipeline/)
+**Live series index:** [aayanahmed200.github.io/stanford-daily-data](https://aayanahmed200.github.io/stanford-daily-data/)
 
-[![HTML](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML) [![GitHub Actions](https://img.shields.io/badge/github%20actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
+**Project reports:** [The Price of Prestige](https://aayanahmed200.github.io/stanford-daily-price-of-prestige/) · [PlasticList EDA](https://aayanahmed200.github.io/stanford-daily-plasticlist-eda/) · [Blotter Fiction](https://aayanahmed200.github.io/stanford-daily-blotter-fiction/) · [ICE Extraction Pipeline](https://aayanahmed200.github.io/stanford-daily-biglocal-ice-pipeline/)
 
-The index for four Stanford Daily data projects: what each one is, what data it uses, and why it exists.
+[![HTML](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML) [![CSS](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![GitHub Actions](https://img.shields.io/badge/github%20actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
 ## Overview
 
-Each project takes one public dataset and reports what it says. This page is the entry point: it lists the four reports, summarises the question behind each, and links to the full page and the code.
+This repository is the landing page and navigation index for a four-part Stanford Daily data-journalism series. It explains what each project investigates, identifies the underlying dataset or source material, and links readers to the published project page and source repository.
 
-## How it was made
+It is an index site, not the data-processing codebase for all four projects. Each project maintains its own analysis, scripts, and documentation in its respective repository.
 
-Hand-written HTML and CSS with no framework and no build step: one page, one stylesheet and one icon, published straight from `site/` by a GitHub Actions workflow on every push to `main`.
+## Projects in the series
 
-The stylesheet is the same file the four project pages serve, copied byte for byte, so the series header, footer, type scale and colours come from one source. Each project page links back here and to its three siblings, and this page links out to all four.
+- **The Price of Prestige** — College Scorecard and BLS data used to examine Stanford's published tuition, financial aid, student costs, and graduate outcomes.
+- **PlasticList EDA** — exploratory analysis of 618 lab samples across 236 Bay Area food and beverage products, including Stanford dining samples.
+- **Lot 95 — Blotter Fiction** — a fictional short story inspired by recurring patterns in 139 Stanford Daily police-blotter articles.
+- **Big Local News ICE Extraction Pipeline** — a Python pipeline for extracting and validating structured information from public ICE press releases; the published coverage figures are based on a five-row smoke test.
 
-## Highlights
+## Implementation
 
-- **The Price of Prestige** — College Scorecard: sticker price versus net price, the aid curve, a 25-year tuition trend, earnings ten years out, and a regression over 530 colleges that separates the school's effect from the family income of the students it admits.
-- **Plastic in the Pantry** — PlasticList: 618 lab samples across 236 Bay Area food and beverage products, including a Stanford dining-hall meal.
-- **Lot 95** — a short story built from 139 Stanford Daily police-blotter articles published between 2021 and 2026.
-- **Reading 965 ICE press releases as data** — a pipeline that extracts dateline locations, people, agencies, money and action categories from the Big Local News ICE dataset, with a validation report.
+The index is hand-written HTML and CSS with no framework or build step. A GitHub Actions workflow publishes the static contents of `site/` to GitHub Pages on pushes to `main`.
 
-## Repository contents
+The shared series stylesheet is copied into this repository and the four project sites so the series masthead, footer, typography, and colour system remain consistent. When the shared design changes, the corresponding stylesheet copies need to be kept in sync.
 
-- `site/index.html` — the series index page.
-- `site/series.css` — the shared stylesheet, identical to the copy each project site serves.
-- `site/favicon.png` — the site icon, shared with the four projects.
-- `.github/workflows/pages.yml` — publishes `site/` to GitHub Pages on every push to `main`.
+## Repository structure
 
-## Notes and limitations
+- `site/index.html` — series landing page.
+- `site/series.css` — shared stylesheet used across the series sites.
+- `site/favicon.png` — series site icon.
+- `.github/workflows/pages.yml` — GitHub Pages publishing workflow.
 
-The summaries describe the datasets and methods stated in each project's repository. Numbers are quoted from those projects, not recomputed here. The page is static HTML with no build step, so editing `site/index.html` is the whole workflow. `site/series.css` is a copy: a change is made in one project site, then copied to the other four repositories so all five stay identical.
+## Run locally
+
+Open `site/index.html` in a browser, or serve the `site/` directory with a local static server:
+
+```bash
+python -m http.server 8000 --directory site
+```
+
+## Status and limitations
+
+The index is a static navigation and summary page. Its project descriptions and numerical summaries are taken from the individual repositories and are not recalculated here. The stylesheet is a copy shared with the project sites, so visual changes need to be synchronised across the repositories.
 
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
