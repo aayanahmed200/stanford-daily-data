@@ -12,6 +12,14 @@ The index for four Stanford Daily data projects: what each one is, what data it 
 
 Each project takes one public dataset and reports what it says. This page is the entry point: it lists the four reports, summarises the question behind each, and links to the full page and the code.
 
+## How it was made
+
+Hand-written HTML and CSS with no framework and no build step: one page, one stylesheet and one icon, published straight from `site/` by a GitHub Actions workflow on every push to `main`.
+
+The stylesheet is the same file the four project pages serve, copied byte for byte, so the series header, footer, type scale and colours come from one source. Each project page links back here and to its three siblings, and this page links out to all four.
+
+## Highlights
+
 - **The Price of Prestige** — College Scorecard: sticker price versus net price, the aid curve, a 25-year tuition trend, earnings ten years out, and a regression over 530 colleges that separates the school's effect from the family income of the students it admits.
 - **Plastic in the Pantry** — PlasticList: 618 lab samples across 236 Bay Area food and beverage products, including a Stanford dining-hall meal.
 - **Lot 95** — a short story built from 139 Stanford Daily police-blotter articles published between 2021 and 2026.
@@ -24,19 +32,9 @@ Each project takes one public dataset and reports what it says. This page is the
 - `site/favicon.png` — the site icon, shared with the four projects.
 - `.github/workflows/pages.yml` — publishes `site/` to GitHub Pages on every push to `main`.
 
-## Run locally
-
-```bash
-python -m http.server 8081 --directory site
-```
-
-Then open `http://127.0.0.1:8081/`.
-
 ## Notes and limitations
 
-- The page is static HTML with no build step; editing `site/index.html` is the whole workflow.
-- The summaries describe the datasets and methods stated in each project's repository. Numbers are quoted from those projects, not recomputed here.
-- `site/series.css` is a copy. Make changes in one project site, then copy the file to the other sites and this repository so all five stay identical.
+The summaries describe the datasets and methods stated in each project's repository. Numbers are quoted from those projects, not recomputed here. The page is static HTML with no build step, so editing `site/index.html` is the whole workflow. `site/series.css` is a copy: a change is made in one project site, then copied to the other four repositories so all five stay identical.
 
 ## License
 
