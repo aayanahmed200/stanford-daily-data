@@ -14,7 +14,7 @@ This repository is the landing page and navigation index for a four-part Stanfor
 
 It is an index site, not the data-processing codebase for all four projects. Each project maintains its own analysis, scripts, and documentation in its respective repository.
 
-## Projects in the series
+## Highlights
 
 - **The Price of Prestige** — College Scorecard and BLS data used to examine Stanford's published tuition, financial aid, student costs, and graduate outcomes.
 - **PlasticList EDA** — exploratory analysis of 618 lab samples across 236 Bay Area food and beverage products, including Stanford dining samples.
