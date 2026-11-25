@@ -34,14 +34,6 @@ The shared series stylesheet is copied into this repository and the four project
 - `site/favicon.png` — series site icon.
 - `.github/workflows/pages.yml` — GitHub Pages publishing workflow.
 
-## Run locally
-
-Open `site/index.html` in a browser, or serve the `site/` directory with a local static server:
-
-```bash
-python -m http.server 8000 --directory site
-```
-
 ## Status and limitations
 
 The index is a static navigation and summary page. Its project descriptions and numerical summaries are taken from the individual repositories and are not recalculated here. The stylesheet is a copy shared with the project sites, so visual changes need to be synchronised across the repositories.
